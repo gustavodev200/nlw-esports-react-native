@@ -11,6 +11,9 @@ import { Routes } from "./src/routes";
 import { Background } from "./src/components/Background";
 import { Loading } from "./src/components/Loading";
 
+import "./src/services/notificationConfigs";
+import { getPushNotificationToken } from "./src/services/getPushNotificationToken";
+
 export default function App() {
   const [fontsLoaded] = useFonts({
     Inter_400Regular,
